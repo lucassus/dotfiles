@@ -3,9 +3,7 @@ export PYTHONDONTWRITEBYTECODE=1
 
 # Auto activate virtualenv
 # See https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
-function cd() {
-  builtin cd "$@"
-
+function __use_project_virtualenv() {
   # Default path to virtualenv in my projects
   DEFAULT_ENV_PATH="env"
 
@@ -19,7 +17,7 @@ function cd() {
   if [[ -z "$VIRTUAL_ENV" ]] ; then
     _activate
   else
-    # check the current folder belong to earlier VIRTUAL_ENV folder
+    # Check the current folder belong to earlier VIRTUAL_ENV folder
     # if yes then do nothing
     # else deactivate then run a new env folder check
     parentdir="$(dirname ${VIRTUAL_ENV})"
@@ -32,3 +30,5 @@ function cd() {
     fi
   fi
 }
+
+chpwd_functions=( "${chpwd_functions[@]}" __use_project_virtualenv )
