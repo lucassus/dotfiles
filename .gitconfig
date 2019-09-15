@@ -12,9 +12,9 @@
     recent-branches = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - (%(color:green)%(committerdate:relative)%(color:reset))'
     undo-last-commit = reset HEAD~1 --soft
     branch-name = "!git rev-parse --abbrev-ref HEAD"
-    publish = "!git push -u origin $(git branch-name)"
-    publish-force = "!git push -u origin $(git branch-name) -f"
-    publish-staging-force = "!git push -u origin $(git branch-name):staging -f"
+    publish = "!git push --set-upstream origin $(git branch-name)"
+    publish-force = "!git push --set-upstream origin $(git branch-name) --force"
+    deploy-to-staging = "!git push --set-upstream origin $(git branch-name):staging"
 
 [core]
     editor=vim
