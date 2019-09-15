@@ -17,3 +17,15 @@
 * `CTRL-T` - Paste the selected files and directories onto the command-line
 * `CTRL-R` - Paste the selected command from history onto the command-line
 * `ALT-C` - cd into the selected directory
+
+### [direnv](https://github.com/direnv/direnv)
+
+Example:
+
+```
+# ~/Projects/my-project/.envrc
+
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
+export FLASK_ENV=test
+```
