@@ -7,7 +7,7 @@ function __use_project_virtualenv() {
   # Default path to virtualenv in my projects
   DEFAULT_ENV_PATH="env"
 
-  function _activate() {
+  function __try_activate() {
     if [[ -f "${DEFAULT_ENV_PATH}/bin/activate" ]] ; then
       source "${DEFAULT_ENV_PATH}/bin/activate"
       echo "Activating virtualenv ${VIRTUAL_ENV}"
@@ -15,7 +15,7 @@ function __use_project_virtualenv() {
   }
 
   if [[ -z "$VIRTUAL_ENV" ]] ; then
-    _activate
+    __try_activate
   else
     # Check the current folder belong to earlier VIRTUAL_ENV folder
     # if yes then do nothing
@@ -26,7 +26,7 @@ function __use_project_virtualenv() {
       echo "Deactivating virtualenv ${VIRTUAL_ENV}"
 
       deactivate
-      _activate
+      __try_activate
     fi
   fi
 }
