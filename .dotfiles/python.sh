@@ -2,5 +2,5 @@
 export PYTHONDONTWRITEBYTECODE=1
 
 function activate {
-	[ -s evn/bin/activate ] && source env/bin/activate
+	[ -s env/bin/activate ] && source env/bin/activate
 }
