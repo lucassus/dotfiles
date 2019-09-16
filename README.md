@@ -29,3 +29,8 @@ export LC_ALL=en_GB.UTF-8
 export LANG=en_GB.UTF-8
 export FLASK_ENV=test
 ```
+
+## Mics
+
+* Install iterm2 intellij dracula color scheme
+* Coding font https://input.fontbureau.com/
