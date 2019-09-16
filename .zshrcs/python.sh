@@ -31,4 +31,4 @@ function __use_project_virtualenv() {
   fi
 }
 
-chpwd_functions=( "${chpwd_functions[@]}" __use_project_virtualenv )
+chpwd_functions=("${chpwd_functions[@]}" __use_project_virtualenv)

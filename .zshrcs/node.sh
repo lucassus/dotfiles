@@ -10,4 +10,4 @@ function __use_project_node() {
   fi
 }
 
-chpwd_functions=( "${chpwd_functions[@]}" __use_project_node )
+chpwd_functions=("${chpwd_functions[@]}" __use_project_node)
