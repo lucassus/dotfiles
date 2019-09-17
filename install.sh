@@ -9,7 +9,7 @@ if [[ ! -s "$HOME/.iterm2_shell_integration.zsh" ]]; then
 fi
 
 # Install required brew packages
-brew_packages=(fasd fzf direnv)
+brew_packages=(fasd fzf direnv cheat)
 
 for package in "${brew_packages[@]}"; do
   if ! type "$package" &> /dev/null; then

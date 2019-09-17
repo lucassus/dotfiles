@@ -34,3 +34,10 @@ export FLASK_ENV=test
 
 * Install iterm2 intellij dracula color scheme
 * Coding font https://input.fontbureau.com/
+* http-server `npm install --global http-server`
+* tldr https://github.com/tldr-pages/tldr
+
+```
+nvm use system
+npm install --global tldr
+```
