@@ -1,0 +1,41 @@
+#!/bin/sh
+# Open text files from Iterm2 in PhpStorm by command+clicking on it
+# You will need the Remote call plugin in PhpStorm - https://plugins.jetbrains.com/plugin/6027
+# And of course curl
+
+# wget this and chmod +x it
+# then move it to somwhere convenient in your path (such as /usr/local/bin)
+
+# With respects to https://gist.github.com/trinitronx/f59a8308d42d71fdba41 for the basis for this
+# iterm_open_with - open a URL, file from CWD, full path, or path with linenumber in default app or PhpStorm if text file
+#                   For usage with iTerm2:
+#                   In iTerm's Preferences > Profiles > Default > Advanced > Semantic History,
+#                   choose "Run command..." and enter "/your/path/to/iterm_open_with \5 \1 \2".
+
+# Usage: iterm_open_with $(pwd) filename [linenumber]
+# $(pwd) = current working directory (either use `pwd` or $PWD)
+# filename = filename to open
+# lineno = line number
+
+pwd=$1
+file=$2
+
+regex='https?://([a-z0-9A-Z]+(:[a-zA-Z0-9]+)?@)?[-a-z0-9A-Z\-]+(\.[-a-z0-9A-Z\-]+)*((:[0-9]+)?)(/[a-zA-Z0-9;:/\.\-_+%~?&amp;@=#\(\)]*)?'
+perl -e "if ( \"$file\" =~ m|$regex|) { exit 0 } else { exit 1 }"
+if [ $? -ne 0 ]; then
+  # if it's not a url, try splitting by ':'
+  arr=($(echo $2 | tr ':' "\n"))
+  file=${arr[0]}
+  lineno=${arr[1]:-$3}
+  colno=${arr[2]:-${3##*:}}
+  [ -e "$file" ] || file=${pwd}/${file}
+fi
+
+file "$file" | grep -q "text"
+if [ $? -ne 0 ]; then
+  /usr/bin/open $file
+else
+  curl "http://localhost:8091?message=${file}${lineno:+:${lineno}}"
+fi
+
+~/bin/idea
