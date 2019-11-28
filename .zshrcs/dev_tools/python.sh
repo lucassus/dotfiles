@@ -1,6 +1,9 @@
 # Ignore python bytecode
 export PYTHONDONTWRITEBYTECODE=1
 
+# Serve current directory over HTTP
+alias serve='python3 -m http.server 8000'
+
 # Auto activate virtualenv
 # See https://stackoverflow.com/questions/45216663/how-to-automatically-activate-virtualenvs-when-cding-into-a-directory
 function __use_project_virtualenv() {
