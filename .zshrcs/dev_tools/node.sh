@@ -5,8 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 # Autoswitch nodejs version
 function __use_project_node() {
   if [[ -s .nvmrc ]] ; then
-    node_version=`cat .nvmrc`
-    nvm use "$node_version"
+    nvm use
   fi
 }
 
