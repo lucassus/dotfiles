@@ -1,14 +1,19 @@
 apps:
+  - zsh
+  - fasd
+  - fzf
+  - direnv
+  - cheat
   - wget
   - vim
   - imagemagick
-  - zsh
   - speedtest-cli
   - archey
   - htop
   - tree
   - cask
 
+# TODO: Add iterm2
 cask_apps:
   - android-studio
   - react-native-debugger
