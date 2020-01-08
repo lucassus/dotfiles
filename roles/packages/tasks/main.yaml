@@ -1,0 +1,13 @@
+- name: Udate homebrew
+  homebrew:
+    update_homebrew: yes
+
+- name: Install libraries with homebrew
+  homebrew:
+    state: present
+    name: "{{ apps }}"
+
+- name: Install cask packages
+  homebrew_cask:
+    state: present
+    name: "{{ cask_apps }}"

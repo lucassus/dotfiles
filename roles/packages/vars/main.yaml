@@ -1,0 +1,20 @@
+apps:
+  - wget
+  - vim
+  - imagemagick
+  - zsh
+  - speedtest-cli
+  - archey
+  - htop
+  - tree
+  - cask
+
+cask_apps:
+  - android-studio
+  - react-native-debugger
+  - flux
+  - atom
+  - textmate
+  - vlc
+  - virtualbox
+  - firefox

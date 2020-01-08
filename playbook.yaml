@@ -1,0 +1,6 @@
+- hosts: localhost
+
+  roles:
+    - {role: 'macos', tags: 'macos'}
+    - {role: 'packages', tags: 'packages'}
+    - {role: 'node', tags: 'node'}

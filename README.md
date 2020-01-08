@@ -4,6 +4,12 @@
 
 ## Prerequisites
 
+1. Install Xcode
+2. Install homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+3. Install ansible `brew install ansible`
+
+`ansible-playbook playbook.yaml` or `ansible-playbook playbook.yaml --tags packages`
+
 ###  [antigen](https://github.com/zsh-users/antigen)
 
 ### [fasd](https://github.com/clvv/fasd)
