@@ -4,8 +4,6 @@
 
 [alias]
   st = status
-  ci = commit
-  di = diff
   co = checkout
   changes=diff --name-status -r
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
