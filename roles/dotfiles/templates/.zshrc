@@ -4,7 +4,7 @@ export LANG=en_GB.UTF-8
 # Add a custom bin directory
 export PATH=$HOME/bin:$PATH
 
-# Source everything from .zshrcs folder
-for file in $HOME/.zshrcs/**/*.sh; do
+# Source everything from .dotfiles folder
+for file in {{ dotfiles_directory }}/**/*.sh; do
   source $file
 done

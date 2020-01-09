@@ -1,3 +1,5 @@
+dotfiles_directory: ~/.dotfiles
+
 git:
   user:
     name: "Lukasz Bandzarewicz"
