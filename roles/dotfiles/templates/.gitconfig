@@ -13,7 +13,7 @@
   undo-last-commit = reset HEAD~1 --soft
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   publish = "!git push --set-upstream origin $(git branch-name)"
-  deploy-to-staging = "!git push --set-upstream origin $(git branch-name):staging"
+  publish-staging = "!git push --set-upstream origin $(git branch-name):staging"
 
 [core]
   editor = vim
