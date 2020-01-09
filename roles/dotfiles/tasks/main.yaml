@@ -1,0 +1,15 @@
+- name: Create directories
+  file:
+    path: ~/{{ item.path }}
+    state: directory
+    mode: '{{ item.mode }}'
+  with_filetree: templates/
+  when: item.state == 'directory'
+
+- name: Copy dotfiles
+  template:
+    src: "{{ item.src }}"
+    dest: ~/{{ item.path }}
+    mode: "{{ item.mode }}"
+  with_filetree: templates/
+  when: item.state == 'file'
