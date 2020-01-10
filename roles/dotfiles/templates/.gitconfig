@@ -27,4 +27,4 @@
   changed = bold yellow
 
 [github]
-  user = lucassus
+  user = {{ github.user }}
