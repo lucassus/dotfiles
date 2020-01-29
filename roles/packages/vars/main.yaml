@@ -1,4 +1,5 @@
 apps:
+  - cask
   - zsh
   - fasd
   - fzf
@@ -11,16 +12,45 @@ apps:
   - archey
   - htop
   - tree
-  - cask
   - dart
 
+  # Stuff required for Android SDK
+  - ant
+  - maven
+  - gradle
+
 cask_apps:
-  - iterm2
-  - android-studio
-  - react-native-debugger
   - flux
-  - atom
   - textmate
-  - vlc
-  - virtualbox
   - firefox
+  - choosy
+  - slack
+  - virtualbox
+  - bartender
+  - istat-menus
+  - dropbox
+  - gifox
+
+  # Development
+  - iterm2
+  - android-sdk
+  - android-ndk
+  - android-studio
+  - intellij-idea
+  - jetbrains-toolbox
+  - react-native-debugger
+  - atom
+  - docker
+  - dash
+  - postico
+
+  # Productivity
+  - boostnote
+  - evernote
+  - bitwarden
+
+  # Multimedia
+  - vlc
+  - spotify
+  - flixtools
+  - kindle

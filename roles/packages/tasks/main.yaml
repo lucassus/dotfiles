@@ -2,12 +2,12 @@
   homebrew:
     update_homebrew: yes
 
-- name: Install libraries with homebrew
+- name: Install homebrew packages
   homebrew:
     state: present
     name: "{{ apps }}"
 
-- name: Install cask packages
+- name: Install homebrew casks
   homebrew_cask:
     state: present
     name: "{{ cask_apps }}"
