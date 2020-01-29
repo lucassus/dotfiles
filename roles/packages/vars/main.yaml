@@ -6,15 +6,21 @@ apps:
   - direnv
   - cheat
   - wget
-  - vim
   - imagemagick
   - speedtest-cli
   - archey
   - htop
   - tree
+
+  # Development
+  - vim
+  - redis
+  - sqlite
+  - postgresql@9.6
+  - python3
   - dart
 
-  # Stuff required for Android SDK
+  ## Stuff required for Android SDK
   - ant
   - maven
   - gradle
