@@ -8,3 +8,7 @@ export PATH=$HOME/bin:$PATH
 for file in {{ dotfiles_directory }}/**/*.sh; do
   source $file
 done
+
+# Ignore history duplicates
+setopt hist_ignore_all_dups
+setopt hist_save_nodups

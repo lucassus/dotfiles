@@ -27,4 +27,4 @@
   changed = bold yellow
 
 [github]
-  user = {{ github.user }}
+  user = {{ git.github.user }}
