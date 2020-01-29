@@ -12,9 +12,10 @@ apps:
   - htop
   - tree
   - cask
+  - dart
 
-# TODO: Add iterm2
 cask_apps:
+  - iterm2
   - android-studio
   - react-native-debugger
   - flux
