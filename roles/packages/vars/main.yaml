@@ -36,6 +36,7 @@ cask_apps:
   - istat-menus
   - dropbox
   - gifox
+  - recordit
 
   # Development
   - iterm2
