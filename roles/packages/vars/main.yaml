@@ -1,0 +1,63 @@
+apps:
+  - cask
+  - zsh
+  - fasd
+  - fzf
+  - direnv
+  - cheat
+  - wget
+  - imagemagick
+  - speedtest-cli
+  - archey
+  - htop
+  - tree
+
+  # Development
+  - vim
+  - redis
+  - sqlite
+  - postgresql@9.6
+  - python3
+  - dart
+
+  ## Stuff required for Android SDK
+  - ant
+  - maven
+  - gradle
+
+cask_apps:
+  - flux
+  - textmate
+  - firefox
+  - choosy
+  - slack
+  - virtualbox
+  - bartender
+  - istat-menus
+  - dropbox
+  - gifox
+  - recordit
+
+  # Development
+  - iterm2
+  - android-sdk
+  - android-ndk
+  - android-studio
+  - intellij-idea
+  - jetbrains-toolbox
+  - react-native-debugger
+  - atom
+  - docker
+  - dash
+  - postico
+
+  # Productivity
+  - boostnote
+  - evernote
+  - bitwarden
+
+  # Multimedia
+  - vlc
+  - spotify
+  - flixtools
+  - kindle

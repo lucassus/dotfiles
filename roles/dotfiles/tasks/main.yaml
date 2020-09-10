@@ -1,0 +1,17 @@
+- name: Remove old dotfiles
+  file:
+    path: "{{ dotfiles_directory }}"
+    state: absent
+
+- name: Re-create dotfiles directory
+  file:
+    path: "{{ dotfiles_directory }}"
+    state: directory
+
+- name: Copy dotfiles
+  template:
+    src: "{{ item.src }}"
+    dest: ~/{{ item.path }}
+    mode: "{{ item.mode }}"
+  with_filetree: templates/
+  when: item.state == 'file'

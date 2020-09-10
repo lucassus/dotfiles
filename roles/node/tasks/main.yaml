@@ -1,0 +1,15 @@
+- name: Install require packages (node, nvm and yarn)
+  homebrew:
+    name:
+      - node
+      - nvm
+      - yarn
+    state: present
+
+- name: Make sure nvm folder is present
+  file:
+    path: ~/.nvm
+    state: directory
+
+- name: Install default nodejs via nvm
+  shell: source $(brew --prefix nvm)/nvm.sh && nvm install 13.3.0 && nvm alias default 13.3.0

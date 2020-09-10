@@ -1,43 +1,12 @@
-# Installation
-
-`./install.sh`
+# Workstation
 
 ## Prerequisites
 
-###  [antigen](https://github.com/zsh-users/antigen)
+1. Install Xcode
+2. Install homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+3. Install ansible `brew install ansible`
 
-### [fasd](https://github.com/clvv/fasd)
+## Installation
 
-> Command-line productivity booster, offers quick access to files and directories, inspired by autojump, z and v.
-
-### [fzf](https://github.com/junegunn/fzf)
-
-> Command-line fuzzy finder
-
-* `CTRL-T` - Paste the selected files and directories onto the command-line
-* `CTRL-R` - Paste the selected command from history onto the command-line
-* `ALT-C` - cd into the selected directory
-
-### [direnv](https://github.com/direnv/direnv)
-
-Example:
-
-```
-# ~/Projects/my-project/.envrc
-
-export LC_ALL=en_GB.UTF-8
-export LANG=en_GB.UTF-8
-export FLASK_ENV=test
-```
-
-## Mics
-
-* Install iterm2 intellij dracula color scheme
-* Coding font https://input.fontbureau.com/
-* http-server `npm install --global http-server`
-* tldr https://github.com/tldr-pages/tldr
-
-```
-nvm use system
-npm install --global tldr
-```
+* `ansible-playbook playbook.yaml` 
+* `ansible-playbook playbook.yaml --tags packages`

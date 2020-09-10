@@ -1,4 +1,3 @@
-# Android SDK
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${JAVA_HOME}/bin:$PATH
 
@@ -11,7 +10,7 @@ export PATH=$MAVEN_HOME/bin:$PATH
 export GRADLE_HOME=/usr/local/opt/gradle
 export PATH=$GRADLE_HOME/bin:$PATH
 
-# Android stuff
+# Android SDK
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$ANDROID_HOME/tools:$PATH
 export PATH=$ANDROID_HOME/platform-tools:$PATH
