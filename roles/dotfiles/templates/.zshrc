@@ -9,7 +9,8 @@ for file in {{ dotfiles_directory }}/**/*.sh; do
   source $file
 done
 
-# Ignore history duplicates
+# Customize zsh configuration
+zstyle ':completion:*' menu select
 setopt hist_ignore_all_dups
 setopt hist_save_nodups
 setopt inc_append_history
