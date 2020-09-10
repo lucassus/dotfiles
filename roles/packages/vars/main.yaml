@@ -1,4 +1,5 @@
 apps:
+  - getantibody/tap/antibody
   - cask
   - zsh
   - fasd
