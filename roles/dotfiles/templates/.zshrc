@@ -12,3 +12,5 @@ done
 # Ignore history duplicates
 setopt hist_ignore_all_dups
 setopt hist_save_nodups
+setopt inc_append_history
+setopt share_history
