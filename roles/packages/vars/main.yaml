@@ -1,5 +1,5 @@
 apps:
-  - getantibody/tap/antibody
+  - zplug
   - cask
   - zsh
   - fasd

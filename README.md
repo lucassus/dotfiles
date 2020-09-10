@@ -8,5 +8,7 @@
 
 ## Installation
 
+`antibody bundle < roles/dotfiles/templates/.dotfiles/zsh_plugins.txt > roles/dotfiles/templates/.dotfiles/zsh_plugins.sh`
+
 * `ansible-playbook playbook.yaml` 
 * `ansible-playbook playbook.yaml --tags packages`
