@@ -1,18 +1,14 @@
+# Enable shell integration https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Sets item2 tab color (rgb)
 iterm_set_tab_color() {
-  if [ $# -eq 0 ]; then
-    # Reset tab color if called with no arguments
-    echo -ne "\033]6;1;bg;*;default\a"
-    return 0
-  fi
-
   echo -ne "\033]6;1;bg;red;brightness;${1}\a"
   echo -ne "\033]6;1;bg;green;brightness;${2}\a"
   echo -ne "\033]6;1;bg;blue;brightness;${3}\a"
+}
 
-  return 0
+iterm_set_default_tab_color() {
+  echo -ne "\033]6;1;bg;*;default\a"
 }
 
 CONFIG_FILE=.iterm_tab_color
@@ -33,7 +29,7 @@ function __change_iterm_tab_color() {
   if [[ -s "${config_file}" ]] ; then
     iterm_set_tab_color $(cat "${config_file}")
   else
-    iterm_set_tab_color
+    iterm_set_default_tab_color
   fi
 }
 
