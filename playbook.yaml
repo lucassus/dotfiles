@@ -1,7 +1,6 @@
 - hosts: localhost
 
   roles:
-    - {role: 'macos', tags: 'macos'}
     - {role: 'packages', tags: 'packages'}
     - {role: 'dotfiles', tags: 'dotfiles'}
     - {role: 'node', tags: 'node'}
