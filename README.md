@@ -1,5 +1,8 @@
 # Workstation
 
+* `brew.sh` & `brew-cask.sh` - homebrew initialization
+* `.osx` - run on a fresh osx setup
+
 ## Prerequisites
 
 1. Install Xcode

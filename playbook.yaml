@@ -1,6 +1,5 @@
 - hosts: localhost
 
   roles:
-    - {role: 'packages', tags: 'packages'}
     - {role: 'dotfiles', tags: 'dotfiles'}
     - {role: 'node', tags: 'node'}
