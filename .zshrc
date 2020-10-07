@@ -21,7 +21,13 @@ source ~/.dotfiles/java.sh
 
 # Customize zsh configuration
 zstyle ':completion:*' menu select
-setopt hist_ignore_all_dups
+
+# Customize the history
+setopt extended_history
+setopt hist_expire_dups_first # Expire duplicates first
+setopt hist_find_no_dups # Ignore duplicates when searching
+setopt hist_reduce_blanks # Removes blank lines from history
+setopt hist_ignore_dups # Do not store duplications
 setopt hist_save_nodups
-setopt inc_append_history
-setopt share_history
+setopt inc_append_history # Adds commands as they are typed, not at shell exit
+setopt share_history # Share history across terminals
