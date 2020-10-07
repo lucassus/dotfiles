@@ -40,6 +40,12 @@ brew install sqlite
 brew install postgresql@9.6
 brew install python3
 brew install dart
+brew install rvm
+
+## Node
+brew install node
+brew install nvm
+brew install yarn
 
 ## Stuff required for Android SDK
 brew install ant

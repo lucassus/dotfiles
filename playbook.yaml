@@ -2,4 +2,3 @@
 
   roles:
     - {role: 'dotfiles', tags: 'dotfiles'}
-    - {role: 'node', tags: 'node'}
