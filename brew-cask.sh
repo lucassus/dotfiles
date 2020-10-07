@@ -5,8 +5,6 @@
 
 # Install native apps
 
-brew install caskroom/cask/brew-cask
-
 brew cask install flux
 brew cask install textmate
 brew cask install firefox
