@@ -1,6 +1,6 @@
 [user]
-  name = {{ git.user.name }}
-  email = {{ git.user.email }}
+  name = Lukasz Bandzarewicz
+  email = lukasz.bandzarewicz@gmail.com
 
 [alias]
   st = status
@@ -27,4 +27,4 @@
   changed = bold yellow
 
 [github]
-  user = {{ git.github.user }}
+  user = lucassus

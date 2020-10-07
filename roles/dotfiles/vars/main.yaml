@@ -1,8 +1,0 @@
-dotfiles_directory: ~/.dotfiles
-
-git:
-  github:
-    user: "lucassus"
-  user:
-    name: "Lukasz Bandzarewicz"
-    email: "lukasz.bandzarewicz@gmail.com"
