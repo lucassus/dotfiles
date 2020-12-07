@@ -1,3 +1,6 @@
+# Export python 3.8 binaries
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
 # Ignore python bytecode
 export PYTHONDONTWRITEBYTECODE=1
 
