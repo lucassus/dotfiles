@@ -13,10 +13,9 @@ source ~/.dotfiles/direnv.sh
 source ~/.dotfiles/fasd.sh
 source ~/.dotfiles/fzf.sh
 source ~/.dotfiles/iterm2.sh
-source ~/.dotfiles/zplug.sh
 source ~/.dotfiles/zsh_history.sh
 
-## Load development modules
+# Load development modules
 source ~/.dotfiles/node.sh
 source ~/.dotfiles/python.sh
 source ~/.dotfiles/ruby.sh

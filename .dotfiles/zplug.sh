@@ -1,4 +1,4 @@
-export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # Load the oh-my-zsh's library.
