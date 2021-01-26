@@ -13,7 +13,7 @@ zplug "plugins/extract", from:oh-my-zsh
 zplug "plugins/fasd", from:oh-my-zsh
 zplug "plugins/fzf", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/history", from:oh-my-zsh
+zplug "plugins/history", from:oh-my-zsh # TODO: Investigate custom history setup in ./zsh_history.sh
 zplug "plugins/last-working-dir", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 

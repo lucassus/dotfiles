@@ -41,10 +41,11 @@ brew install postgresql@9.6
 brew install python3
 brew install dart
 brew install rvm
+brew install neofetch  # nice system info
 
 ## Node
 brew install node
-brew install nvm
+# TODO: Do not `brew install nvm since it will be install by the zsh plugin
 brew install yarn
 
 ## Stuff required for Android SDK
