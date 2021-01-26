@@ -2,7 +2,7 @@
 
 * `.osx` - run on a fresh osx setup
 * `./brew.sh` & `./brew-cask.sh` - homebrew initialization
-* `./bootstrap && source ~/.zshrc` - install dotfiles
+* `./bootstrap.sh && source ~/.zshrc` - install dotfiles
 
 ## Prerequisites
 

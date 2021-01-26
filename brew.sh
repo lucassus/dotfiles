@@ -42,6 +42,7 @@ brew install python3
 brew install dart
 brew install rvm
 brew install neofetch  # nice system info
+brew install hstr      # bash and zsh shell history suggest box - easily view, navigate, search and manage your command history
 
 ## Node
 brew install node
