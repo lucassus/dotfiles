@@ -1,11 +1,12 @@
 # Make the history size unlimited
 export HISTFILESIZE=1000000000
-export HISTSIZE=1000000000
+export HISTSIZE=${HISTFILESIZE}
 
 # HSTR configuration
 alias hh=hstr                    # hh to be alias for hstr
 setopt histignorespace           # skip cmds w/ leading space from history
-export HSTR_CONFIG=hicolor       # get more colors
+export HISTFILE=~/.zsh_history
+export HSTR_CONFIG=no-confirm,hicolor,raw-history-view
 bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
 # Customize the history
