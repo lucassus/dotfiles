@@ -22,6 +22,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zdharma/fast-syntax-highlighting"
+zplug "lukechilds/zsh-nvm"
 
 # Load the theme.
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
