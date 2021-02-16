@@ -1,6 +1,7 @@
 cask "firefox"
 cask "brave-browser"
 cask "google-chrome"
+cask "google-drive"
 cask "dropbox"
 cask "flux"
 cask "textmate"
@@ -13,6 +14,7 @@ cask "setapp"
 # Productivity
 cask "boostnote"
 cask "evernote"
+cask "notion"
 cask "bitwarden"
 
 # Multimedia

@@ -957,6 +957,17 @@
         "options": {
           "full_name": "visual-studio-code"
         }
+      },
+      "notion": {
+        "version": "2.0.11",
+        "options": {
+          "full_name": "notion"
+        }
+      }
+    },
+    "tap": {
+      "sachaos/todoist": {
+        "revision": "1d63a18bf7b2b764df65bacf4350998428c0bb9f"
       }
     }
   },
