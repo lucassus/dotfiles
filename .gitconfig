@@ -12,6 +12,7 @@
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   publish = "!git push --set-upstream origin $(git branch-name)"
   publish-staging = "!git push --set-upstream origin $(git branch-name):staging"
+  diff-master = "!git diff origin/master..HEAD"
 
 [core]
   editor = vim
