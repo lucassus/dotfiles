@@ -1,6 +1,6 @@
 start=$(ruby -e 'puts Time.now.to_f')
 
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin
 export LANG=en_GB.UTF-8
 
 # Add a custom bin directory
