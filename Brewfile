@@ -5,7 +5,6 @@ cask "google-drive"
 cask "dropbox"
 cask "flux"
 cask "textmate"
-cask "choosy"
 cask "slack"
 cask "virtualbox"
 cask "istat-menus"
@@ -48,34 +47,35 @@ brew "jq"
 brew "neofetch"  # nice system info
 brew "hstr"      # bash and zsh shell history suggest box - easily view, navigate, search and manage your command history
 brew "rsync"
+brew "lsd"       # The next gen ls command
+brew "dust"      # A more intuitive version of du in rust
+brew "bat"       # A cat(1) clone with wings.
 
 # Development
 brew "git"
 brew "vim"
 brew "redis"
 brew "sqlite"
-brew "postgresql@9.6"
+brew "postgresql"
 brew "python"
 brew "python3"
-brew "dart"
 brew "ruby"
 brew "pulumi"
 
 cask "iterm2"
-cask "jetbrains-toolbox"
+# cask "jetbrains-toolbox"
 cask "react-native-debugger"
 cask "atom"
 cask "docker"
-cask "dash"
 cask "postico"
 cask "visual-studio-code"
 
 ## Node
-# TODO: Do not install nvm here, since it will be installed by the zsh plugin
 brew "node"
 brew "yarn"
+# !!! Do not install nvm here, since it will be installed by the zsh plugin !!!
 
 ## Java
-cask "java"
 brew "ant"
-brew "maven"
+brew "jenv"
+brew "mvnvm"
